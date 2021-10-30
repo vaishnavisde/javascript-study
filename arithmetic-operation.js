@@ -45,7 +45,7 @@ function calcuations(type, a, b) {
             console.log(`Multiplication of ${a}*${b} =`, multiple(a, b));
             break;
         case "division":
-            console.log(`Division of ${a}-${b} =`, division(a, b));
+            console.log(`Division of ${a}/${b} =`, division(a, b));
             break;
         default:
             throw new Error("Please provide valid input");
@@ -53,13 +53,6 @@ function calcuations(type, a, b) {
 }
 
 //sum of two number is 17
-calcuations("sum", 10, 7);
+calcuations("division", 9, 7);
 
-//sub of two number is 7
-calcuations("subraction", 10, 7);
-
-//mul of two number is 70
-calcuations("multiple", 10, 7);
-
-//div of two number is 2
-calcuations("division", 10, 5);
+///
