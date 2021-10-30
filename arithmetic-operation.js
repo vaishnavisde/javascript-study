@@ -1,56 +1,65 @@
 //checking whether the given value is in number
-function CheckIsNumber(input) {
+const checkIsNumber = input => {
     if (typeof input !== "number") {
-      throw "given value is not in number";
+        throw "given value is not in number";
     }
     return true;
-  }
-  //sum of two numbers
-  let sum = (a, b) => {
-    CheckIsNumber(a);
-    CheckIsNumber(b);
+};
+//sum of two numbers
+const sum = (a, b) => {
+    checkIsNumber(a);
+    checkIsNumber(b);
     return a + b;
-  };
-  
-  //subraction of two numbers
-  let subraction = (a, b) => {
-    CheckIsNumber(a);
-    CheckIsNumber(b);
+};
+
+//subraction of two numbers
+const subraction = (a, b) => {
+    checkIsNumber(a);
+    checkIsNumber(b);
     return a - b;
-  };
-  
-  //multiplication of two numbers
-  let multiple = (a, b) => {
-    CheckIsNumber(a);
-    CheckIsNumber(b);
+};
+
+//multiplication of two numbers
+const multiple = (a, b) => {
+    checkIsNumber(a);
+    checkIsNumber(b);
     return a * b;
-  };
-  
-  //division of two numbers
-  let division = (a, b) => {
-    CheckIsNumber(a);
-    CheckIsNumber(b);
+};
+
+//division of two numbers
+const division = (a, b) => {
+    checkIsNumber(a);
+    checkIsNumber(b);
     return a / b;
-  };
-  //calculating
-  function result(calculate) {
-    switch (true) {
-      case calculate == sum:
-        console.log("Result for sum of two number is,", sum(9, 8));
-        break;
-      case calculate == subraction:
-        console.log("Result for subraction of two number is,", subraction(5,9));
-        break;
-      case calculate == multiple:
-        console.log("Result for multiple of two number is,", multiple(6, 9));
-        break;
-      case calculate == division:
-        console.log("Result for division of two number is,", division(56, 9));
+};
+//calculating
+function calcuations(type, a, b) {
+    switch (type) {
+        case "sum":
+            console.log(`Sum of ${a}+${b} =`, sum(a, b));
+            break;
+        case "subraction":
+            console.log(`Subraction of ${a}-${b} =`, subraction(a, b));
+            break;
+        case "multiple":
+            console.log(`Multiplication of ${a}*${b} =`, multiple(a, b));
+            break;
+        case "division":
+            console.log(`Division of ${a}-${b} =`, division(a, b));
+            break;
+        default:
+            throw new Error("Please provide valid input");
     }
-  }
-  result(sum);
-  
-  //the out put will be
-  
-  //sum of two number is 17
-  
+}
+
+//sum of two number is 17
+calcuations("sum", 10, 7);
+
+//sub of two number is 7
+calcuations("subraction", 10, 7);
+
+//mul of two number is 70
+calcuations("multiple", 10, 7);
+
+//div of two number is 2
+calcuations("division", 10, 5);
