@@ -24,7 +24,7 @@ delete user.isAlive;
 console.log(user);
 
 //to check the property the given value is exists
-console.log("name" in user);
+console.log("age" in user);
 
 //to iterate over an object: for(key in obj)loop
 for (let key in user) {
