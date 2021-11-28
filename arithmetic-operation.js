@@ -54,5 +54,3 @@ function calcuations(type, a, b) {
 
 //sum of two number is 17
 calcuations("division", 9, 7);
-
-///
