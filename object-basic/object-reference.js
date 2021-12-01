@@ -21,3 +21,10 @@ let another = Object.assign({ isAlive: true }, person);
 
 another.name = "gowtham";
 console.log(another);
+
+
+
+//GARBAGE COLLECTION...
+//in javascript garbage collection are performed automatically..
+//we cannot force it are prevent it
+//object are retained in memory while they are reachable
