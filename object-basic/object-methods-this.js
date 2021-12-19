@@ -17,14 +17,13 @@ user.sayHi();
 //we can also use pre-defined function as a method
 
 let admin = {
-  name: "papa",
-  Age: 20,
+  name: "papa"
 };
-function sayhi() {
+function greetings() {
   console.log("welcome");
 }
 
-user.sayhi = sayhi();
+user.greetings= greetings();
 
 //"this" in method
 //to access the object method can use the "this" keyword
@@ -34,7 +33,7 @@ let person={
     age:10,
 }
 
-person.Sayhi=function(){
+person.welcome =function(){
     console.log(this.name +" "+"your welcome");
 }
-person.Sayhi();
+person.welcome();
