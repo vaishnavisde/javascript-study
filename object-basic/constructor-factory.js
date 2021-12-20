@@ -1,7 +1,6 @@
 //there is two way to create new object
 //constructor function and factory function
 
-
 //constructor function should be in pascal scale
 //here we using the "new" keyword
 function Person(name) {
