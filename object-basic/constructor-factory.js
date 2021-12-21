@@ -43,6 +43,7 @@ let admin = {
 
 //obj?.pro-returns obj.pro  if object exists otherwise undefined
 console.log(admin.adress?.street);//undefined
+console.log(admin?.name);//vaish
 
 //obj.method?.() calls obj.method() if obj.method exests.otherwise return undefined
 admin.greetings?.(); //your welcome
