@@ -25,3 +25,25 @@ function createPerson(name) {
 }
 let kirthick = createPerson("kirthick");
 kirthick.greetings();
+
+let nivi = createPerson("nivi");
+nivi.greetings();
+
+//optional chaining
+//the optional chaining stop the evaluation if the value before? is undefined or null and return undefined
+
+let admin = {
+  name: "vaish",
+  age: 17,
+  adress: {},
+  greetings() {
+    console.log("your welcome");
+  },
+};
+
+//obj?.pro-returns obj.pro  if object exists otherwise undefined
+console.log(admin.adress?.street);//undefined
+
+//obj.method?.() calls obj.method() if obj.method exests.otherwise return undefined
+admin.greetings?.(); //your welcome
+user?.greetings(); //nothing no such method
