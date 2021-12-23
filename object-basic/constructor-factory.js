@@ -45,6 +45,7 @@ let admin = {
 console.log(admin.adress?.street);//undefined
 console.log(admin?.name);//vaish
 
+
 //obj.method?.() calls obj.method() if obj.method exests.otherwise return undefined
 admin.greetings?.(); //your welcome
 user?.greetings(); //nothing no such method
