@@ -1,10 +1,10 @@
-let sum=10;
-let  num=0;
-for(i=1;i<=sum;i++){
+let user = 10;
+
+let sum=0;
+for(i=1;i<=user;i++){
   if(i%2==0){
-    num=num+i
+    sum=sum+i;
   }
   
 }
-console.log(num);
-  
+console.log( "sum of even number"+" "+sum);
