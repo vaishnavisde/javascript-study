@@ -48,3 +48,5 @@ console.log(colour); //yellow ,green
 //unshift  add one element to the beginging of the array
 colour.unshift("red");
 console.log(colour);
+
+console.log(colour.length);
