@@ -34,3 +34,4 @@ for (let key in user) {
 onsole.log(user.isAlive)
 console.log(user.gender)
 console.log(user.age)
+console.log(user.name)
